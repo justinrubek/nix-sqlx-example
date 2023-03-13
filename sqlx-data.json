@@ -1,0 +1,47 @@
+{
+  "db": "PostgreSQL",
+  "00ca292889e7f420324a86f4e0612ea7e1d1665934689c6f5e20736c2f896e66": {
+    "describe": {
+      "columns": [
+        {
+          "name": "id",
+          "ordinal": 0,
+          "type_info": "Int4"
+        },
+        {
+          "name": "name",
+          "ordinal": 1,
+          "type_info": "Varchar"
+        }
+      ],
+      "nullable": [
+        false,
+        false
+      ],
+      "parameters": {
+        "Left": []
+      }
+    },
+    "query": "SELECT id, name FROM users"
+  },
+  "36353a552a8c213f3d284f5c51bfa7c9e4b59553194d7421dcb651ed444ec940": {
+    "describe": {
+      "columns": [
+        {
+          "name": "id",
+          "ordinal": 0,
+          "type_info": "Int4"
+        }
+      ],
+      "nullable": [
+        false
+      ],
+      "parameters": {
+        "Left": [
+          "Varchar"
+        ]
+      }
+    },
+    "query": "INSERT INTO users (name) VALUES ($1) RETURNING id"
+  }
+}

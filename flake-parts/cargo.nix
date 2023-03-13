@@ -13,10 +13,15 @@
       pkgs.cargo-audit
       pkgs.cargo-udeps
       pkgs.bacon
+      pkgs.sqlx-cli
       # version control
       pkgs.cocogitto
       inputs'.bomper.packages.cli
       # misc
+      # project scripts
+      self'.packages."scripts/init-database"
+      self'.packages."scripts/start-database"
+      self'.packages."scripts/stop-database"
     ];
 
     # packages required for building the rust packages

@@ -30,8 +30,9 @@
         inputs.pre-commit-hooks.flakeModule
 
         ./flake-parts/cargo.nix
-        ./flake-parts/rust-toolchain.nix
+        ./flake-parts/postgres.nix
         ./flake-parts/pre-commit.nix
+        ./flake-parts/rust-toolchain.nix
       ];
     };
 }
