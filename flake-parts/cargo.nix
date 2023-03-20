@@ -39,6 +39,7 @@
           "crates"
           "Cargo.toml"
           "Cargo.lock"
+          "sqlx-data.json"
         ];
       };
 
